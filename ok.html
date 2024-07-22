@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <title>Luxe Latte Lounge</title>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+main{
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgvideo{
+    background-size: contain;
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    z-index:-1; /brought the text above the video/
+}
+
+@media (max-width:1024px){
+    .bgvideo{
+        max-height:700px;
+        background-size: contain;
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    z-index:-1;
+    }
+}
+
+.navigation{
+    display:flex;
+    flex:wrap;
+    align-items:center;
+    justify-content: space-between;
+    padding:30px 30px;
+}
+
+
+.navigation h1{
+    color:white;
+    font-size:5rem;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.navigation span{
+    color:crimson;
+}
+
+.bar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.bar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.visible{
+    height:400px;
+    padding: 70px;
+}
+.visible h1{
+    font-size: 2.75em;;
+    color:white;
+    font-weight: 600px;
+}
+.visible p{
+    color: burlywood;
+    font-size: 1.875rem;
+    padding-top:10px;;
+}
+.visible button{
+    height:40px;
+    color:white;
+    background: none;
+    font-size:1.375rem;
+    margin-top:20px;
+    padding: 5px 30px;
+    border: 2px solid crimson;
+    cursor: pointer;
+    transition: 0.4 ease;
+}
+
+@media (max-width: 1024px) {
+    .navigation h1 {
+        font-size: 2rem;
+    }
+
+    .bar li a {
+        font-size: 1rem;
+    }
+
+    .visible h1 {
+        font-size: 2rem;
+    }
+
+    .visible p {
+        font-size: 1.5rem;
+    }
+
+    .visible button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation h1 {
+        margin-bottom: 20px;
+    }
+
+    .bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bar li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navigation h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bar li {
+        margin: 10px 0;
+    }
+
+    .bar li a {
+        font-size: 1rem;
+    }
+
+    .visible {
+        padding: 50px 20px;
+    }
+
+    .visible h1 {
+        font-size: 1.5rem;
+    }
+
+    .visible p {
+        font-size: 1.25rem;
+    }
+
+    .visible button {
+        font-size: 0.875rem;
+        padding: 5px 20px;
+    }
+}
+</style>
+<body>
+    <div class="main">
+
+        <img class="bgvideo" src="https://images.pexels.com/photos/2159065/pexels-photo-2159065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
+    <div class="navigation">
+        <h1><span>F</span>roth & <span>F</span>lavor</h1>
+        <ul class="bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact me.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="visible">
+        <h1><span>Welcome</span> to  <span>our cafe</span></h1>
+        <p></p>
+        
+    </div>
+
+    </div>
+</body>
+<footer>
+</footer>
+</html>
